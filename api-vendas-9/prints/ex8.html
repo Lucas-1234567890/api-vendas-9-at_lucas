@@ -1,0 +1,13 @@
+<html><body style='margin:0;background:#0c0c0c'><div style='background:#333;color:#ddd;font:14px Segoe UI;padding:8px 14px'>Ex. 8 - Resposta pelo gateway (porta 8085)</div><pre style='color:#ddd;font:13px Consolas,monospace;padding:14px;white-space:pre-wrap;word-break:break-all;margin:0'>$ curl -i -H &quot;Authorization: Bearer &lt;token&gt;&quot; localhost:8085/fornecedores-service/fornecedores
+HTTP/1.1 200 OK
+transfer-encoding: chunked
+Content-Type: application/json
+Date: Sat, 26 Sep 2026 13:20:09 GMT
+
+[{&quot;id&quot;:1,&quot;nome&quot;:&quot;Distribuidora Alfa Ltda&quot;,&quot;cnpj&quot;:&quot;11.222.333/0001-81&quot;},{&quot;id&quot;:2,&quot;nome&quot;:&quot;Beta Suprimentos S.A.&quot;,&quot;cnpj&quot;:&quot;22.333.444/0001-72&quot;},{&quot;id&quot;:3,&quot;nome&quot;:&quot;Comercial Gama Ltda&quot;,&quot;cnpj&quot;:&quot;33.444.555/0001-63&quot;},{&quot;id&quot;:4,&quot;nome&quot;:&quot;Delta Materiais ME&quot;,&quot;cnpj&quot;:&quot;44.555.666/0001-54&quot;},{&quot;id&quot;:5,&quot;nome&quot;:&quot;Epsilon Industria e Comercio&quot;,&quot;cnpj&quot;:&quot;55.666.777/0001-45&quot;},{&quot;id&quot;:6,&quot;nome&quot;:&quot;Tech Parts Ltda&quot;,&quot;cnpj&quot;:&quot;66.777.888/0001-99&quot;}]
+
+$ curl -i localhost:8085/fornecedores-service/fornecedores   (sem token)
+HTTP/1.1 401 Unauthorized
+content-length: 0
+
+</pre></body></html>

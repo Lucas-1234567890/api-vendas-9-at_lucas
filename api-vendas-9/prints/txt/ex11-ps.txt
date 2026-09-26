@@ -1,0 +1,6 @@
+NAMES                  IMAGE                               STATUS              PORTS
+produtos-service       api-vendas-9-produtos-service       Up About a minute   0.0.0.0:8081->8081/tcp, [::]:8081->8081/tcp
+gateway                api-vendas-9-gateway                Up About a minute   0.0.0.0:8085->8085/tcp, [::]:8085->8085/tcp
+fornecedores-service   api-vendas-9-fornecedores-service   Up About a minute   0.0.0.0:8086->8084/tcp, [::]:8086->8084/tcp
+eureka-server          api-vendas-9-eureka-server          Up 3 minutes        0.0.0.0:8761->8761/tcp, [::]:8761->8761/tcp
+config-server          api-vendas-9-config-server          Up 3 minutes        0.0.0.0:8888->8888/tcp, [::]:8888->8888/tcp

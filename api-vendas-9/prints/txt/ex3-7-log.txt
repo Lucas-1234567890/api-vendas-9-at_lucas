@@ -1,0 +1,9 @@
+$ docker compose logs fornecedores-service
+2026-09-26T13:18:25.281Z  INFO 1 --- [fornecedores-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=fornecedores-service, profiles=[docker], label=null, version=null, state=null
+2026-09-26T13:18:25.282Z  INFO 1 --- [fornecedores-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-server:8888
+2026-09-26T13:18:25.282Z  INFO 1 --- [fornecedores-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=fornecedores-service, profiles=[default], label=null, version=null, state=null
+2026-09-26T13:18:25.283Z  WARN 1 --- [fornecedores-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@5118388b uris = array<String>['http://localh
+2026-09-26T13:18:25.284Z  WARN 1 --- [fornecedores-service] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@15a902e7 uris = array<String>['http://localh
+2026-09-26T13:18:43.249Z  INFO 1 --- [fornecedores-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path ''
+2026-09-26T13:18:43.305Z  INFO 1 --- [fornecedores-service] [           main] c.e.f.FornecedorServiceApplication       : Started FornecedorServiceApplication in 28.458 seconds (process running for 32.273)
+2026-09-26T13:18:43.346Z  INFO 1 --- [fornecedores-service] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_FORNECEDORES-SERVICE/f7e22c3c6ea7:fornecedores-service:8084 - registration status: 204

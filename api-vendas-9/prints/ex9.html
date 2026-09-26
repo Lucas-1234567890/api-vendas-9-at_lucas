@@ -1,0 +1,15 @@
+<html><body style='margin:0;background:#0c0c0c'><div style='background:#333;color:#ddd;font:14px Segoe UI;padding:8px 14px'>Ex. 9 - POST /fornecedores (201) e listagem</div><pre style='color:#ddd;font:13px Consolas,monospace;padding:14px;white-space:pre-wrap;word-break:break-all;margin:0'>$ curl -i -X POST localhost:8086/fornecedores -H &quot;Content-Type: application/json&quot; -d &#x27;{&quot;nome&quot;:&quot;Tech Parts Ltda&quot;,&quot;cnpj&quot;:&quot;66.777.888/0001-99&quot;}&#x27;
+HTTP/1.1 201 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sat, 26 Sep 2026 13:20:07 GMT
+
+{&quot;id&quot;:6,&quot;nome&quot;:&quot;Tech Parts Ltda&quot;,&quot;cnpj&quot;:&quot;66.777.888/0001-99&quot;}
+
+$ curl -i localhost:8086/fornecedores
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sat, 26 Sep 2026 13:20:07 GMT
+
+[{&quot;id&quot;:1,&quot;nome&quot;:&quot;Distribuidora Alfa Ltda&quot;,&quot;cnpj&quot;:&quot;11.222.333/0001-81&quot;},{&quot;id&quot;:2,&quot;nome&quot;:&quot;Beta Suprimentos S.A.&quot;,&quot;cnpj&quot;:&quot;22.333.444/0001-72&quot;},{&quot;id&quot;:3,&quot;nome&quot;:&quot;Comercial Gama Ltda&quot;,&quot;cnpj&quot;:&quot;33.444.555/0001-63&quot;},{&quot;id&quot;:4,&quot;nome&quot;:&quot;Delta Materiais ME&quot;,&quot;cnpj&quot;:&quot;44.555.666/0001-54&quot;},{&quot;id&quot;:5,&quot;nome&quot;:&quot;Epsilon Industria e Comercio&quot;,&quot;cnpj&quot;:&quot;55.666.777/0001-45&quot;},{&quot;id&quot;:6,&quot;nome&quot;:&quot;Tech Parts Ltda&quot;,&quot;cnpj&quot;:&quot;66.777.888/0001-99&quot;}]</pre></body></html>

@@ -1,0 +1,12 @@
+$ curl -i -H "Authorization: Bearer <token>" localhost:8085/fornecedores-service/fornecedores
+HTTP/1.1 200 OK
+transfer-encoding: chunked
+Content-Type: application/json
+Date: Sat, 26 Sep 2026 13:20:09 GMT
+
+[{"id":1,"nome":"Distribuidora Alfa Ltda","cnpj":"11.222.333/0001-81"},{"id":2,"nome":"Beta Suprimentos S.A.","cnpj":"22.333.444/0001-72"},{"id":3,"nome":"Comercial Gama Ltda","cnpj":"33.444.555/0001-63"},{"id":4,"nome":"Delta Materiais ME","cnpj":"44.555.666/0001-54"},{"id":5,"nome":"Epsilon Industria e Comercio","cnpj":"55.666.777/0001-45"},{"id":6,"nome":"Tech Parts Ltda","cnpj":"66.777.888/0001-99"}]
+
+$ curl -i localhost:8085/fornecedores-service/fornecedores   (sem token)
+HTTP/1.1 401 Unauthorized
+content-length: 0
+
