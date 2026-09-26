@@ -15,8 +15,8 @@ jobs:
           distribution: temurin
           java-version: '17'
           cache: maven
-          cache-dependency-path: fornecedores-service/pom.xml
+          cache-dependency-path: api-vendas-9/fornecedores-service/pom.xml
 
       - name: Compilar com Maven
         run: mvn -B package
-        working-directory: fornecedores-service
+        working-directory: api-vendas-9/fornecedores-service
